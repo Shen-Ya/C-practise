@@ -10,9 +10,9 @@ int main()
 	for(i = 0; i < 10; i++)
 		scanf("%d",&a[i]);
 	printf("\n");
-	for(j = 0; j < 9; j++)
-		for(i = 0; i < 9-j; i++)
-			if(a[i]>a[i+1])
+	for(j = 0; j < 9; j++)          //进行9次循环，实现9趟比较
+		for(i = 0; i < 9-j; i++)    //在每一趟中进行9-j次比较
+			if(a[i]>a[i+1])         //相邻两个数比较
 			{
 				t = a[i];
 				a[i] = a[i+1];
